@@ -1,0 +1,21 @@
+{
+    "db" : {
+        "host" : "localhost",
+        "db" : "pat",
+        "user": "root",
+        "password" : ""
+    },
+    "mail" : {
+        "host" : "localhost",
+        "service" : "gmail",
+        "port":465,
+        "auth" : {
+            "user" : "myartorders@gmail.com",
+            "pass" : "icixdqrjklpjyvoj"
+        },
+        "to" : "edit here"
+    }, 
+    "stripe" : {
+        "host" : "http://localhost:3000"
+    }
+}
