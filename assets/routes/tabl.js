@@ -7,13 +7,12 @@ module.exports = function(db, config){
     const { check } = require('../fnc')
 
     route.get('/', async(req, res)=>{
-        if(req.query.id){
-            const a = await Tableaux.getById(req.query.id)
-            res.json(check(a))
-        }else{
-            const a = await Tableaux.getAll()
-            res.json(check(a))
-        }
+         const a = await Tableaux.getAll()
+        res.json(check(a))
+    })
+    route.get("/:id", async(req, res)=>{
+        const a = await Tableaux.getById(req.params.id)
+        res.json(check(a))
     })
 
     return route   

@@ -62,7 +62,7 @@ mysql.createConnection({
 
     app.listen(8080, ()=>console.log('started ... on 8080'))
 }) 
-
+.catch(err=>console.log(err))
 
 
 
